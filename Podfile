@@ -15,7 +15,8 @@ target 'TaskIOS' do
   target 'TaskIOSUITests' do
     # Pods for testing
   end
-pod 'Alamofire', '~> 5.7'
-pod 'RxSwift', '~> 6.5'
-pod 'RxCocoa', '~> 6.5'
+  pod 'Alamofire', '~> 5.7'
+  pod 'SDWebImage', '~> 5.15'
+  pod 'RxSwift', '~> 6.5'
+  pod 'RxCocoa', '~> 6.5'
 end

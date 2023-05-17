@@ -25,6 +25,9 @@
 		1080EBF82A1541E800397BE4 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBF72A1541E800397BE4 /* NetworkConstants.swift */; };
 		1080EBFA2A15422400397BE4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBF92A15422400397BE4 /* APIClient.swift */; };
 		1080EBFC2A15431200397BE4 /* HomeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBFB2A15431200397BE4 /* HomeServices.swift */; };
+		1080EC002A154BB300397BE4 /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBFF2A154BB300397BE4 /* ViewControllerExt.swift */; };
+		1080EC032A154E7C00397BE4 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EC012A154E7C00397BE4 /* ArticleCell.swift */; };
+		1080EC042A154E7C00397BE4 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1080EC022A154E7C00397BE4 /* ArticleCell.xib */; };
 		90C97DC0E1E03F5256EA7112 /* Pods_TaskIOS_TaskIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8874C2E533248D48335EC9B7 /* Pods_TaskIOS_TaskIOSUITests.framework */; };
 		F43EB9E0E1E8B061DA57C561 /* Pods_TaskIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C015C277AC299DE15687A092 /* Pods_TaskIOS.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +71,9 @@
 		1080EBF72A1541E800397BE4 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		1080EBF92A15422400397BE4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		1080EBFB2A15431200397BE4 /* HomeServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServices.swift; sourceTree = "<group>"; };
+		1080EBFF2A154BB300397BE4 /* ViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExt.swift; sourceTree = "<group>"; };
+		1080EC012A154E7C00397BE4 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		1080EC022A154E7C00397BE4 /* ArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
 		221483A75779DC7FA27D2A74 /* Pods-TaskIOS-TaskIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskIOS-TaskIOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-TaskIOS-TaskIOSUITests/Pods-TaskIOS-TaskIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		72BB6A04D96D25DB6573C4C6 /* Pods_TaskIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7757A29542DC247BC110E2C2 /* Pods-TaskIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskIOSTests.debug.xcconfig"; path = "Target Support Files/Pods-TaskIOSTests/Pods-TaskIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 				1080EBE82A15409300397BE4 /* Scenes */,
 				1080EBC32A153F6F00397BE4 /* Info.plist */,
 				1080EBBB2A153F6D00397BE4 /* TaskIOS.xcdatamodeld */,
+				1080EBFD2A154B8E00397BE4 /* Files */,
 			);
 			path = TaskIOS;
 			sourceTree = "<group>";
@@ -213,6 +220,8 @@
 		1080EBE92A15410E00397BE4 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				1080EC012A154E7C00397BE4 /* ArticleCell.swift */,
+				1080EC022A154E7C00397BE4 /* ArticleCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -251,6 +260,22 @@
 				1080EBF42A1541C900397BE4 /* APIClientProtocol.swift */,
 			);
 			path = NetworkProtocols;
+			sourceTree = "<group>";
+		};
+		1080EBFD2A154B8E00397BE4 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				1080EBFE2A154BA100397BE4 /* Extensions */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		1080EBFE2A154BA100397BE4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1080EBFF2A154BB300397BE4 /* ViewControllerExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		3D3582F4B09B404F29CEB95D /* Frameworks */ = {
@@ -372,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1080EC042A154E7C00397BE4 /* ArticleCell.xib in Resources */,
 				1080EBC22A153F6F00397BE4 /* LaunchScreen.storyboard in Resources */,
 				1080EBBF2A153F6F00397BE4 /* Assets.xcassets in Resources */,
 				1080EBBA2A153F6D00397BE4 /* Main.storyboard in Resources */,
@@ -509,9 +535,11 @@
 				1080EBFA2A15422400397BE4 /* APIClient.swift in Sources */,
 				1080EBB72A153F6D00397BE4 /* HomeVC.swift in Sources */,
 				1080EBB32A153F6D00397BE4 /* AppDelegate.swift in Sources */,
+				1080EC032A154E7C00397BE4 /* ArticleCell.swift in Sources */,
 				1080EBF22A15419900397BE4 /* AlertSubscribtion.swift in Sources */,
 				1080EBF52A1541C900397BE4 /* APIClientProtocol.swift in Sources */,
 				1080EBBD2A153F6D00397BE4 /* TaskIOS.xcdatamodeld in Sources */,
+				1080EC002A154BB300397BE4 /* ViewControllerExt.swift in Sources */,
 				1080EBB52A153F6D00397BE4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

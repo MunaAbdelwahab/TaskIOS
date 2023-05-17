@@ -21,15 +21,15 @@ struct HomeDataResponse: Codable {
 // MARK: - ArticlesClass
 struct ArticlesData: Codable {
     let source: Source
-    let description: String
+    let description: String?
     let title: String
     let url: String
-    let urlToImage: String
+    let urlToImage: String?
     let publishedAt: String
 }
 
 // MARK: - Source
 struct Source: Codable {
-    let id: String
+    let id: String?
     let name: String
 }
