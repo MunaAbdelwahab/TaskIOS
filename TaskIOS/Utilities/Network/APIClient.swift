@@ -175,3 +175,10 @@ class APIClient: APIClientProtocol {
     }
     
 }
+
+struct Connectivity {
+  static let sharedInstance = NetworkReachabilityManager()!
+  static var isConnectedToInternet:Bool {
+      return self.sharedInstance.isReachable
+    }
+}

@@ -1,7 +1,5 @@
 PODS:
-  - Alamofire (4.9.1)
-  - AlamofireURLCache (0.4.1):
-    - Alamofire (~> 4.4)
+  - Alamofire (5.7.1)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -13,8 +11,7 @@ PODS:
   - SDWebImage/Core (5.15.8)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.4)
-  - AlamofireURLCache
+  - Alamofire (~> 5.7)
   - RxCocoa (~> 6.5)
   - RxSwift (~> 6.5)
   - SDWebImage (~> 5.15)
@@ -22,20 +19,18 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
-    - AlamofireURLCache
     - RxCocoa
     - RxRelay
     - RxSwift
     - SDWebImage
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  AlamofireURLCache: 826e814b3120d770d4e93fa3e1abf5558d29f883
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SDWebImage: cb032eba469c54e0000e78bcb0a13cdde0a52798
 
-PODFILE CHECKSUM: ac2f45b96208556b32f558e970f125cd27fb72a3
+PODFILE CHECKSUM: 9f1dd5b9762a881a89bc06ded089f873724d9b94
 
 COCOAPODS: 1.12.1
