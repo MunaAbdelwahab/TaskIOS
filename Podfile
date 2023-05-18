@@ -19,4 +19,6 @@ target 'TaskIOS' do
   pod 'SDWebImage', '~> 5.15'
   pod 'RxSwift', '~> 6.5'
   pod 'RxCocoa', '~> 6.5'
+  pod 'Cosmos', '~> 23.0'
+  pod 'IQKeyboardManagerSwift'
 end

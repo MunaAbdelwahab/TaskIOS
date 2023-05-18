@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		08896DCAFF1D58237D86ABCA /* Pods_TaskIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72BB6A04D96D25DB6573C4C6 /* Pods_TaskIOSTests.framework */; };
+		101D6AE52A166E40004B5373 /* ArticleDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D6AE42A166E40004B5373 /* ArticleDetailsVC.swift */; };
 		1080EBB32A153F6D00397BE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBB22A153F6D00397BE4 /* AppDelegate.swift */; };
 		1080EBB52A153F6D00397BE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBB42A153F6D00397BE4 /* SceneDelegate.swift */; };
 		1080EBB72A153F6D00397BE4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBB62A153F6D00397BE4 /* HomeVC.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		101D6AE42A166E40004B5373 /* ArticleDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsVC.swift; sourceTree = "<group>"; };
 		1080EBAF2A153F6D00397BE4 /* TaskIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1080EBB22A153F6D00397BE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1080EBB42A153F6D00397BE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,25 @@
 				99225FAF9B09541383798FE8 /* Pods-TaskIOSTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		101D6AE22A166DFE004B5373 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1080EBE92A15410E00397BE4 /* Cell */,
+				1080EBB62A153F6D00397BE4 /* HomeVC.swift */,
+				1080EBEC2A15413C00397BE4 /* HomeViewModel.swift */,
+				1080EBEA2A15412F00397BE4 /* HomeVC+Model.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		101D6AE32A166E11004B5373 /* ArticleDetails */ = {
+			isa = PBXGroup;
+			children = (
+				101D6AE42A166E40004B5373 /* ArticleDetailsVC.swift */,
+			);
+			path = ArticleDetails;
 			sourceTree = "<group>";
 		};
 		1080EBA62A153F6D00397BE4 = {
@@ -209,10 +230,8 @@
 		1080EBE82A15409300397BE4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				1080EBE92A15410E00397BE4 /* Cell */,
-				1080EBB62A153F6D00397BE4 /* HomeVC.swift */,
-				1080EBEC2A15413C00397BE4 /* HomeViewModel.swift */,
-				1080EBEA2A15412F00397BE4 /* HomeVC+Model.swift */,
+				101D6AE22A166DFE004B5373 /* Home */,
+				101D6AE32A166E11004B5373 /* ArticleDetails */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -532,6 +551,7 @@
 				1080EBFC2A15431200397BE4 /* HomeServices.swift in Sources */,
 				1080EBEB2A15412F00397BE4 /* HomeVC+Model.swift in Sources */,
 				1080EBED2A15413C00397BE4 /* HomeViewModel.swift in Sources */,
+				101D6AE52A166E40004B5373 /* ArticleDetailsVC.swift in Sources */,
 				1080EBFA2A15422400397BE4 /* APIClient.swift in Sources */,
 				1080EBB72A153F6D00397BE4 /* HomeVC.swift in Sources */,
 				1080EBB32A153F6D00397BE4 /* AppDelegate.swift in Sources */,

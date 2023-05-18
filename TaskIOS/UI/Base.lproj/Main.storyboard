@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vf8-9k-Sbp">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,17 +13,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="TaskIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ar1-Hr-YAe">
-                                <rect key="frame" x="0.0" y="155" width="393" height="663"/>
+                                <rect key="frame" x="0.0" y="146" width="375" height="632"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8m-te-HGh">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="404"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="404"/>
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="khu-mO-LCl">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="404"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="404"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="404" id="tVI-cX-b0n"/>
@@ -69,13 +69,85 @@
             </objects>
             <point key="canvasLocation" x="866.41221374045801" y="3.5211267605633805"/>
         </scene>
+        <!--Article DetailsVC-->
+        <scene sceneID="g8b-mM-BgI">
+            <objects>
+                <viewController storyboardIdentifier="ArticleDetailsVC" id="Cte-rk-rfW" customClass="ArticleDetailsVC" customModule="TaskIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T8F-av-6vT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9i-AL-WJP">
+                                <rect key="frame" x="0.0" y="50" width="375" height="568"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zkb-q6-Dw5">
+                                <rect key="frame" x="25" y="658" width="325" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yLe-qF-dQb">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9w-Yl-Dsc">
+                                        <rect key="frame" x="125" y="0.0" width="200" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="rbs-qz-Ljn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="XrC-cx-1Nh"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGD-I6-QoB">
+                                <rect key="frame" x="25" y="728" width="325" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EYK-Qc-vHf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButton:" destination="Cte-rk-rfW" eventType="touchUpInside" id="4NT-Cv-dLQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cZk-DB-NDM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zkb-q6-Dw5" firstAttribute="top" secondItem="w9i-AL-WJP" secondAttribute="bottom" constant="40" id="1Bz-3g-S0h"/>
+                            <constraint firstItem="lGD-I6-QoB" firstAttribute="leading" secondItem="cZk-DB-NDM" secondAttribute="leading" constant="25" id="6KD-RY-qB7"/>
+                            <constraint firstItem="zkb-q6-Dw5" firstAttribute="leading" secondItem="cZk-DB-NDM" secondAttribute="leading" constant="25" id="7Eh-kI-Vp4"/>
+                            <constraint firstItem="cZk-DB-NDM" firstAttribute="trailing" secondItem="lGD-I6-QoB" secondAttribute="trailing" constant="25" id="K9z-Pw-5Uc"/>
+                            <constraint firstItem="w9i-AL-WJP" firstAttribute="leading" secondItem="cZk-DB-NDM" secondAttribute="leading" id="YcS-Vt-ROA"/>
+                            <constraint firstItem="w9i-AL-WJP" firstAttribute="top" secondItem="cZk-DB-NDM" secondAttribute="top" id="evR-jH-wt6"/>
+                            <constraint firstItem="lGD-I6-QoB" firstAttribute="top" secondItem="zkb-q6-Dw5" secondAttribute="bottom" constant="10" id="fyb-Hc-kYh"/>
+                            <constraint firstItem="cZk-DB-NDM" firstAttribute="bottom" secondItem="lGD-I6-QoB" secondAttribute="bottom" id="o60-dB-WSd"/>
+                            <constraint firstItem="cZk-DB-NDM" firstAttribute="trailing" secondItem="zkb-q6-Dw5" secondAttribute="trailing" constant="25" id="t1I-Eb-RFd"/>
+                            <constraint firstItem="cZk-DB-NDM" firstAttribute="trailing" secondItem="w9i-AL-WJP" secondAttribute="trailing" id="wv5-Vh-gDO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rateNum" destination="yLe-qF-dQb" id="NPV-Sp-L3P"/>
+                        <outlet property="webView" destination="w9i-AL-WJP" id="P9B-9Q-Is5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C9D-Sb-U8G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526" y="4"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="i6o-xt-pf2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vf8-9k-Sbp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="QFW-k7-VDU">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <rect key="frame" x="0.0" y="50" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

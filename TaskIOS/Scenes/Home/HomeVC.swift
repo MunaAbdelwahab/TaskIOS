@@ -78,14 +78,12 @@ class HomeVC: UIViewController {
         }.disposed(by: disposeBag)
     }
     
-    private func subscribeToArticlesSelection(){
+    private func subscribeToArticlesSelection() {
         Observable.zip(articlesTV.rx.itemSelected, articlesTV.rx.modelSelected(ArticlesData.self)).bind { [weak self] (indexPath, article) in
             guard let self = self else {return}
-            guard let url = URL(string: article.url) else {
-                return
-            }
-            let VC = SFSafariViewController(url: url)
-            present(VC, animated: true)
+            let VC = self.storyboard?.instantiateViewController(withIdentifier: "ArticleDetailsVC") as! ArticleDetailsVC
+            VC.articleUrl = article.url
+            self.navigationController?.pushViewController(VC, animated: true)
         }.disposed(by: disposeBag)
     }
     
