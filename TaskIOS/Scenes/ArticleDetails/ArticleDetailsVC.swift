@@ -18,9 +18,14 @@ class ArticleDetailsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let url = URL (string: articleUrl) {
-            let requestObj = URLRequest(url: url)
-            webView.loadRequest(requestObj)
+        
+        if articleUrl.isEmpty {
+            showAlert(with: .reguler, msg: "No connection.")
+        } else {
+            if let url = URL (string: articleUrl) {
+                let requestObj = URLRequest(url: url)
+                webView.loadRequest(requestObj)
+            }
         }
     }
 

@@ -20,7 +20,6 @@ class HomeVC: UIViewController {
     //MARK:- Variables
     private var viewModel = HomeViewModel()
     private var disposeBag = DisposeBag()
-    var refreshControl: UIRefreshControl?
     var noConnection = false
     
     override func viewDidLoad() {
@@ -39,7 +38,6 @@ class HomeVC: UIViewController {
         
         registerCells()
         subscribeToAlert()
-        addRefreshControl()
         viewModel.getArticles()
         subscribeToArticlesSelection()
     }
@@ -79,12 +77,21 @@ class HomeVC: UIViewController {
     }
     
     private func subscribeToArticlesSelection() {
-        Observable.zip(articlesTV.rx.itemSelected, articlesTV.rx.modelSelected(ArticlesData.self)).bind { [weak self] (indexPath, article) in
-            guard let self = self else {return}
-            let VC = self.storyboard?.instantiateViewController(withIdentifier: "ArticleDetailsVC") as! ArticleDetailsVC
-            VC.articleUrl = article.url
-            self.navigationController?.pushViewController(VC, animated: true)
-        }.disposed(by: disposeBag)
+        if !noConnection {
+            Observable.zip(articlesTV.rx.itemSelected, articlesTV.rx.modelSelected(ArticlesData.self)).bind { [weak self] (indexPath, article) in
+                guard let self = self else {return}
+                let VC = self.storyboard?.instantiateViewController(withIdentifier: "ArticleDetailsVC") as! ArticleDetailsVC
+                VC.articleUrl = article.url
+                self.navigationController?.pushViewController(VC, animated: true)
+            }.disposed(by: disposeBag)
+        } else {
+            Observable.zip(articlesTV.rx.itemSelected, articlesTV.rx.modelSelected(Articles.self)).bind { [weak self] (indexPath, article) in
+                guard let self = self else {return}
+                let VC = self.storyboard?.instantiateViewController(withIdentifier: "ArticleDetailsVC") as! ArticleDetailsVC
+                VC.articleUrl = article.url ?? ""
+                self.navigationController?.pushViewController(VC, animated: true)
+            }.disposed(by: disposeBag)
+        }
     }
     
     private func subscribeToAlert() {
@@ -94,16 +101,5 @@ class HomeVC: UIViewController {
                 self.showAlert(with: .reguler, msg: alert.element!)
             }
         }).disposed(by: disposeBag)
-    }
-    
-    func addRefreshControl(){
-        refreshControl = UIRefreshControl()
-        refreshControl?.tintColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-        refreshControl?.addTarget(self, action: #selector(refreshTableView(sender:)), for: .valueChanged)
-        scrollView.addSubview(refreshControl!)
-    }
-    
-    @objc func refreshTableView(sender: UIRefreshControl){
-        viewModel.getArticles()
     }
 }

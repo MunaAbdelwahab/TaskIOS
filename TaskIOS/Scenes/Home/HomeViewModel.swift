@@ -81,6 +81,7 @@ class HomeViewModel: AlertViewModel {
             articlesCache.desc = article.description
             articlesCache.title = article.title
             articlesCache.urlToImage = article.urlToImage
+            articlesCache.url = article.url
             do {
                 try self.context.save()
             } catch {

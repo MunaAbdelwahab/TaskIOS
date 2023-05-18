@@ -20,5 +20,5 @@ extension Articles {
     @NSManaged public var title: String?
     @NSManaged public var publishedAt: String?
     @NSManaged public var urlToImage: String?
-
+    @NSManaged public var url: String?
 }
