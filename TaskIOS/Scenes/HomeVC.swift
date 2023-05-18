@@ -9,6 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import Network
+import SafariServices
 
 class HomeVC: UIViewController {
     
@@ -40,6 +41,7 @@ class HomeVC: UIViewController {
         subscribeToAlert()
         addRefreshControl()
         viewModel.getArticles()
+        subscribeToArticlesSelection()
     }
     
     private func registerCells(){
@@ -49,7 +51,6 @@ class HomeVC: UIViewController {
     private func bindArticlesDataToArticlesCV() {
         viewModel.homeCategoriesObserver.bind(to: articlesTV.rx.items(cellIdentifier: "ArticleCell", cellType: ArticleCell.self )) {[weak self] (row, article, cell) in
             guard let self = self else {return}
-            print("hiiiii \(article.title)")
             cell.setData(image: article.urlToImage ?? "" , name: article.title, desc: article.description ?? "")
             cell.layoutIfNeeded()
             self.articlesTV.layoutIfNeeded()
@@ -74,6 +75,17 @@ class HomeVC: UIViewController {
             cell.layoutIfNeeded()
             self.articlesTV.layoutIfNeeded()
             self.articlesTVHeight.constant = self.articlesTV.contentSize.height
+        }.disposed(by: disposeBag)
+    }
+    
+    private func subscribeToArticlesSelection(){
+        Observable.zip(articlesTV.rx.itemSelected, articlesTV.rx.modelSelected(ArticlesData.self)).bind { [weak self] (indexPath, article) in
+            guard let self = self else {return}
+            guard let url = URL(string: article.url) else {
+                return
+            }
+            let VC = SFSafariViewController(url: url)
+            present(VC, animated: true)
         }.disposed(by: disposeBag)
     }
     
