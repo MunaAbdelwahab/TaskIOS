@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import Cosmos
 
 class ArticleDetailsVC: UIViewController {
     
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var rateNum: UITextField!
+    @IBOutlet weak var rate: CosmosView!
     
     var articleUrl = ""
 
@@ -23,6 +25,13 @@ class ArticleDetailsVC: UIViewController {
     }
 
     @IBAction func saveButton(_ sender: Any) {
-        
+        if rateNum.text == "1" || rateNum.text == "2" || rateNum.text == "3" || rateNum.text == "4" || rateNum.text == "5" {
+            let rateT = rateNum.text
+            rate.rating = Double(rateT ?? "")!
+            showAlert(with: .reguler, msg: "You have successfully rated the article.")
+        } else {
+            rate.rating = 0
+            showAlert(with: .reguler, msg: "Rate out of range.")
+        }
     }
 }
