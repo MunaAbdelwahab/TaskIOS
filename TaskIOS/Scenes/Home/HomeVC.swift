@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeVC.swift
 //  TaskIOS
 //
 //  Created by Muna Abdelwahab on 17/05/2023.
@@ -9,7 +9,6 @@ import UIKit
 import RxSwift
 import RxCocoa
 import Network
-import SafariServices
 
 class HomeVC: UIViewController {
     
@@ -18,7 +17,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var articlesTVHeight: NSLayoutConstraint!
     
     //MARK:- Variables
-    private var viewModel = HomeViewModel()
+    var viewModel = HomeViewModel()
     private var disposeBag = DisposeBag()
     var noConnection = false
     

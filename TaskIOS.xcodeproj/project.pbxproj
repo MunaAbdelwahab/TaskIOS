@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		08896DCAFF1D58237D86ABCA /* Pods_TaskIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72BB6A04D96D25DB6573C4C6 /* Pods_TaskIOSTests.framework */; };
 		101D6AE52A166E40004B5373 /* ArticleDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D6AE42A166E40004B5373 /* ArticleDetailsVC.swift */; };
+		1052C8892A17BE42008C9F14 /* TaskIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1052C8882A17BE42008C9F14 /* TaskIOSTests.swift */; };
+		1052C88D2A17BEE1008C9F14 /* TaskIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1052C88C2A17BEE1008C9F14 /* TaskIOSUITests.swift */; };
+		1052C88F2A17BFA0008C9F14 /* TaskIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1052C88E2A17BFA0008C9F14 /* TaskIOSUITestsLaunchTests.swift */; };
+		1052C8912A17C06C008C9F14 /* HomeVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1052C8902A17C06C008C9F14 /* HomeVCTests.swift */; };
+		1052C8932A17C219008C9F14 /* ArticleDetailsVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1052C8922A17C219008C9F14 /* ArticleDetailsVCTests.swift */; };
 		1080EBB32A153F6D00397BE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBB22A153F6D00397BE4 /* AppDelegate.swift */; };
 		1080EBB52A153F6D00397BE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBB42A153F6D00397BE4 /* SceneDelegate.swift */; };
 		1080EBB72A153F6D00397BE4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBB62A153F6D00397BE4 /* HomeVC.swift */; };
@@ -16,9 +21,6 @@
 		1080EBBD2A153F6D00397BE4 /* TaskIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBBB2A153F6D00397BE4 /* TaskIOS.xcdatamodeld */; };
 		1080EBBF2A153F6F00397BE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1080EBBE2A153F6F00397BE4 /* Assets.xcassets */; };
 		1080EBC22A153F6F00397BE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1080EBC02A153F6F00397BE4 /* LaunchScreen.storyboard */; };
-		1080EBCD2A153F6F00397BE4 /* TaskIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBCC2A153F6F00397BE4 /* TaskIOSTests.swift */; };
-		1080EBD72A153F6F00397BE4 /* TaskIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBD62A153F6F00397BE4 /* TaskIOSUITests.swift */; };
-		1080EBD92A153F6F00397BE4 /* TaskIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBD82A153F6F00397BE4 /* TaskIOSUITestsLaunchTests.swift */; };
 		1080EBEB2A15412F00397BE4 /* HomeVC+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBEA2A15412F00397BE4 /* HomeVC+Model.swift */; };
 		1080EBED2A15413C00397BE4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBEC2A15413C00397BE4 /* HomeViewModel.swift */; };
 		1080EBF22A15419900397BE4 /* AlertSubscribtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080EBF12A15419900397BE4 /* AlertSubscribtion.swift */; };
@@ -52,6 +54,11 @@
 
 /* Begin PBXFileReference section */
 		101D6AE42A166E40004B5373 /* ArticleDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsVC.swift; sourceTree = "<group>"; };
+		1052C8882A17BE42008C9F14 /* TaskIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskIOSTests.swift; sourceTree = "<group>"; };
+		1052C88C2A17BEE1008C9F14 /* TaskIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskIOSUITests.swift; sourceTree = "<group>"; };
+		1052C88E2A17BFA0008C9F14 /* TaskIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1052C8902A17C06C008C9F14 /* HomeVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCTests.swift; sourceTree = "<group>"; };
+		1052C8922A17C219008C9F14 /* ArticleDetailsVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsVCTests.swift; sourceTree = "<group>"; };
 		1080EBAF2A153F6D00397BE4 /* TaskIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1080EBB22A153F6D00397BE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1080EBB42A153F6D00397BE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,10 +69,7 @@
 		1080EBC12A153F6F00397BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1080EBC32A153F6F00397BE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1080EBC82A153F6F00397BE4 /* TaskIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1080EBCC2A153F6F00397BE4 /* TaskIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskIOSTests.swift; sourceTree = "<group>"; };
 		1080EBD22A153F6F00397BE4 /* TaskIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1080EBD62A153F6F00397BE4 /* TaskIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskIOSUITests.swift; sourceTree = "<group>"; };
-		1080EBD82A153F6F00397BE4 /* TaskIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1080EBEA2A15412F00397BE4 /* HomeVC+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+Model.swift"; sourceTree = "<group>"; };
 		1080EBEC2A15413C00397BE4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		1080EBF12A15419900397BE4 /* AlertSubscribtion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSubscribtion.swift; sourceTree = "<group>"; };
@@ -147,12 +151,31 @@
 			path = ArticleDetails;
 			sourceTree = "<group>";
 		};
+		1052C88A2A17BE53008C9F14 /* TaskIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				1052C8882A17BE42008C9F14 /* TaskIOSTests.swift */,
+				1052C8902A17C06C008C9F14 /* HomeVCTests.swift */,
+				1052C8922A17C219008C9F14 /* ArticleDetailsVCTests.swift */,
+			);
+			path = TaskIOSTests;
+			sourceTree = "<group>";
+		};
+		1052C88B2A17BEA7008C9F14 /* TaskIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1052C88C2A17BEE1008C9F14 /* TaskIOSUITests.swift */,
+				1052C88E2A17BFA0008C9F14 /* TaskIOSUITestsLaunchTests.swift */,
+			);
+			path = TaskIOSUITests;
+			sourceTree = "<group>";
+		};
 		1080EBA62A153F6D00397BE4 = {
 			isa = PBXGroup;
 			children = (
 				1080EBB12A153F6D00397BE4 /* TaskIOS */,
-				1080EBCB2A153F6F00397BE4 /* TaskIOSTests */,
-				1080EBD52A153F6F00397BE4 /* TaskIOSUITests */,
+				1052C88A2A17BE53008C9F14 /* TaskIOSTests */,
+				1052C88B2A17BEA7008C9F14 /* TaskIOSUITests */,
 				1080EBB02A153F6D00397BE4 /* Products */,
 				0519906894795EF3E854A381 /* Pods */,
 				3D3582F4B09B404F29CEB95D /* Frameworks */,
@@ -182,23 +205,6 @@
 				1080EBFD2A154B8E00397BE4 /* Files */,
 			);
 			path = TaskIOS;
-			sourceTree = "<group>";
-		};
-		1080EBCB2A153F6F00397BE4 /* TaskIOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				1080EBCC2A153F6F00397BE4 /* TaskIOSTests.swift */,
-			);
-			path = TaskIOSTests;
-			sourceTree = "<group>";
-		};
-		1080EBD52A153F6F00397BE4 /* TaskIOSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1080EBD62A153F6F00397BE4 /* TaskIOSUITests.swift */,
-				1080EBD82A153F6F00397BE4 /* TaskIOSUITestsLaunchTests.swift */,
-			);
-			path = TaskIOSUITests;
 			sourceTree = "<group>";
 		};
 		1080EBE52A15406700397BE4 /* Delegate */ = {
@@ -383,10 +389,12 @@
 					};
 					1080EBC72A153F6F00397BE4 = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 						TestTargetID = 1080EBAE2A153F6D00397BE4;
 					};
 					1080EBD12A153F6F00397BE4 = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 						TestTargetID = 1080EBAE2A153F6D00397BE4;
 					};
 				};
@@ -568,7 +576,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1080EBCD2A153F6F00397BE4 /* TaskIOSTests.swift in Sources */,
+				1052C8892A17BE42008C9F14 /* TaskIOSTests.swift in Sources */,
+				1052C8932A17C219008C9F14 /* ArticleDetailsVCTests.swift in Sources */,
+				1052C8912A17C06C008C9F14 /* HomeVCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,8 +586,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1080EBD72A153F6F00397BE4 /* TaskIOSUITests.swift in Sources */,
-				1080EBD92A153F6F00397BE4 /* TaskIOSUITestsLaunchTests.swift in Sources */,
+				1052C88D2A17BEE1008C9F14 /* TaskIOSUITests.swift in Sources */,
+				1052C88F2A17BFA0008C9F14 /* TaskIOSUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,6 +804,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MK3YP874FR;
@@ -803,6 +814,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = muna.TaskIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TaskIOS";
@@ -815,6 +827,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MK3YP874FR;
@@ -835,6 +848,7 @@
 			baseConfigurationReference = 221483A75779DC7FA27D2A74 /* Pods-TaskIOS-TaskIOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MK3YP874FR;
@@ -843,6 +857,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = muna.TaskIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TaskIOS;
@@ -854,6 +869,7 @@
 			baseConfigurationReference = F47C56A81830E19A8A4B04DE /* Pods-TaskIOS-TaskIOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MK3YP874FR;

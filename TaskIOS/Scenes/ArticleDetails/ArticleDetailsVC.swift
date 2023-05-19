@@ -13,6 +13,7 @@ class ArticleDetailsVC: UIViewController {
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var rateNum: UITextField!
     @IBOutlet weak var rate: CosmosView!
+    @IBOutlet weak var saveBt: UIButton!
     
     var articleUrl = ""
 

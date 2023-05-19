@@ -11,7 +11,7 @@
         <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="TaskIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="HomeVC" customModule="TaskIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,6 +153,7 @@
                     <connections>
                         <outlet property="rate" destination="j9w-Yl-Dsc" id="hdN-rg-Vc6"/>
                         <outlet property="rateNum" destination="yLe-qF-dQb" id="NPV-Sp-L3P"/>
+                        <outlet property="saveBt" destination="lGD-I6-QoB" id="xIV-SH-Ban"/>
                         <outlet property="webView" destination="w9i-AL-WJP" id="P9B-9Q-Is5"/>
                     </connections>
                 </viewController>
